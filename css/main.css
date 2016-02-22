@@ -1,0 +1,230 @@
+
+.container-fluid { 
+    padding: 0px;
+}
+
+body{
+	background-image: url('../img/argyle.png');
+	text-align: center;
+	font-size: 16px;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+	color: white;
+}
+
+header {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	display: inline-block;
+}
+
+#nav {
+	top: 0px;
+	background-color: rgba(24, 28, 34, 0.8);
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+#nav a{
+    font-size: 25px;
+    margin: 30px;
+}
+
+#content{
+	margin-top: 3%;
+	text-align: center;
+	position: relative;
+	margin-bottom: 120px;
+}
+
+header a{
+	color: white;
+	margin-right: 20px;
+}
+
+a:hover { 
+    color: #4098a4;
+}
+
+p{
+	padding: 5px;
+}
+
+.image {
+	width: 400px;
+	height: 350px;
+	border-radius: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+    .image {
+		width: 350px;
+		height: 310px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+    .image {
+		width: 300px;
+		height: 260px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+    .image {
+		width: 200px;
+		height: 175px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+    .image {
+		width: 100px;
+		height: 75px;
+	}
+}
+
+#description{
+	color: white;
+	margin-top: 0px;
+}
+
+#description p{
+	font-size: 20px;
+	text-align: left;
+	text-indent: 3em;
+}
+
+#description-title{
+	text-align: center;
+	font-size: 30px;
+}
+
+#image1{
+	position: absolute;
+	top: 25%;
+	left: 0%;
+}
+
+#image2{
+	position: absolute;
+	top: 12.5%;
+	left: 15%;
+}
+
+#image3{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+#image4{
+	position: absolute;
+	top: 12.5%;
+	right: 15%;
+}
+
+#image5{
+	position: absolute;
+	top: 25%;
+	right: 0%;
+}
+
+.image:hover {
+-webkit-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
+box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
+}
+.image {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+@media screen and (min-width: 1600px) {
+    .image {
+        width: 450px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .image {
+        width: 550px;
+        height: 475px;
+    }
+
+    #description {
+        margin-top: 200px;
+    }
+
+    #nav a{
+        font-size: 50px;
+    }
+
+    #description p{
+        font-size: 30px;
+    }
+
+    #description-title {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .image {
+        width: 650px;
+        height: 550px;
+    }
+}
+
+
+
+
+
+
+
+
+.well[ui-view]{
+ height: 65px; 
+}
+
+.ui-view-container {
+  position: relative;
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+[ui-view].ng-enter {
+ 	 opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+[ui-view].ng-enter-active {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+
+[ui-view].ng-leave {
+   opacity: 0.5;
+    -webkit-transform: none;
+    transform: none;
+}
+
+[ui-view].ng-leave-active {
+   opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}

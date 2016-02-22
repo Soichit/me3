@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Soichi</title>
+
+		<!-- Libraries -->
+		<script src="https://code.jquery.com/jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		
+		  <!-- Angular -->
+		  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+		  <!-- Angular Animate -->
+		  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-animate.js"></script>
+		  <!-- UI-Router -->
+		  <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+
+		<!-- Custom code -->
+		<script src="js/app.js"></script>
+		<link href = "css/main.css" rel="stylesheet" type = "text/css"/>
+		<link rel="shortcut icon" type="image/png" href="img/shard.jpg">
+	</head>
+
+
+	<body>
+		<div id="nav" class="container-fluid">
+			<header class="container-fluid">     
+				<a ui-sref="home">Home</a>
+				<a ui-sref="index1">1</a>
+				<a ui-sref="index2">2</a>
+				<a ui-sref="index3">3</a>
+				<a ui-sref="index4">4</a>
+				<a ui-sref="index5">5</a>
+				<a ui-sref="index6">6</a>
+				<a ui-sref="index7">7</a>
+				<a ui-sref="index8">8</a>
+			</header>
+		</div>
+
+		<div id="content" class="container-fluid">
+			<div class="span12 ui-view-container">
+				<div ui-view></div>
+			</div>
+		</div>
+	</body>
+</html>

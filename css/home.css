@@ -1,0 +1,291 @@
+h1{
+	margin-top: 10%;
+	font-size: 140px;
+	display: inline-block
+}
+
+h2{
+	font-size: 70px;
+}
+
+h3{
+	font-size: 30px;
+}
+
+a{
+	color: white;
+	margin-top: 50px;
+}
+
+#homeHeader{
+	top: 0px;
+	background-image: url('../img/tokyo.jpg');
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	width: 100%;
+	min-height: 600px;
+	background-repeat: no-repeat;
+	margin-bottom: 100px;
+}
+
+#content{
+	margin-top: 0;
+}
+
+#homeLinks{
+	margin-top: 60px;
+	margin-bottom: 100px;
+	text-align: left;
+	float: left;
+}
+
+#homeLinks a{
+	font-size: 25px;
+	margin: 20px;
+}
+
+#homeVideo {
+	margin-bottom: 120px;
+}
+
+#homeHobbies{
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width: 1800px) {
+	h1{
+		font-size: 200px;
+	}
+
+	h2{
+		font-size: 75px;
+	}
+
+	h3{
+		font-size: 50px;
+	}
+
+	#homeHobbies{
+		margin-top: 200px;
+		font-size: 30px;
+	}
+}
+
+
+.container {
+	position:relative;
+	overflow:hidden;
+	width:115px;
+	height:110px;
+}
+.container .textbox {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:115px;
+	height:100px;
+	margin-left:-150px;
+	margin-top:30px;
+}
+.container:hover .textbox {
+	margin-left:-5px;
+	margin-top:30px;
+}
+.container img {
+	width:100px;
+	height:100px;	
+	margin-left:0;
+}
+.container:hover img {
+	margin-left:120px;
+}
+.container img, .textbox {
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 1800px) {
+	#homeLinks{
+		margin-top: 80px;
+	}
+	#homeLinks a{
+		font-size: 35px;
+	}
+	.container {
+		position:relative;
+		overflow:hidden;
+		width:165px;
+		height:160px;
+	}
+	.container .textbox {
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:165px;
+		height:150px;
+		margin-left:-180px;
+		margin-top:50px;
+	}
+	.container:hover .textbox {
+		margin-left:0px;
+		margin-top:50px;
+		margin-right:10px;
+	}
+	.container img {
+		width:150px;
+		height:150px;	
+		margin-left:0;
+	}
+	.container:hover img {
+		margin-left:170px;
+	}
+}
+
+
+
+
+.w3-container {
+	position:relative;
+	width:250px;
+	height:250px;
+}
+.w3-container:hover .image2 {
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
+.image2 {
+	height: 250px;
+	width: 250px;
+	//margin: 10px;
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+.w3-container .textbox {
+	width:250px;
+	height:250px;
+	//margin: 10px;
+	position:absolute;
+	left:0px;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	border-radius:100%;
+	-webkit-box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+	box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+}
+#firstCircle .textbox {
+	top:-112px;
+}
+#fourthCircle .text {
+	padding-top:70px;
+}
+.w3-container:hover .textbox {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.text {
+	padding-top: 100px;
+	font-size: 30px;
+}
+.textbox {
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+@media screen and (max-width: 1300px) {
+	.w3-container {
+		width:150px;
+		height:150px;
+	}
+	.w3-container .textbox {
+		width:150px;
+		height:150px;
+		margin-left:20px;
+	}
+	.text {
+		padding-top: 65px;
+		font-size: 20px;
+	}
+	.image2 {
+		height: 150px;
+		width: 150px;
+		margin-left: 20px;
+	}
+	#fourthCircle .text {
+		padding-top:40px;
+	}
+	#firstCircle .textbox {
+		top:-61px;
+	}
+}
+
+
+@media screen and (min-width: 2300px) {
+	.w3-container {
+		width:300px;
+		height:300px;
+	}
+
+	.w3-container .textbox {
+		width:300px;
+		height:300px;
+		margin-left: 75px;
+		margin-right:75px;
+		margin-top: 25px;
+		left:0px;
+	}
+	.text {
+		padding-top: 120px;
+		font-size: 40px;
+	}
+	.image2 {
+		height: 300px;
+		width: 300px;
+		margin-left: 75px;
+		margin-right:75px;
+		margin-top: 25px;
+	}
+	#firstCircle .textbox {
+		top:-142px;
+	}
+}
+
+
+
+.text2:hover {
+text-shadow: 0 1px 0 #666,
+0 2px 0 #555,
+1px 3px 0 #444,
+2px 4px 0 #333,
+3px 5px 0 #222,
+4px 6px 1px #111,
+0 0 5px rgba(0,0,0,.6),
+0 1px 3px rgba(0,0,0,.5),
+1px 3px 5px rgba(0,0,0,.4),
+3px 5px 10px rgba(0,0,0,.3),
+5px 10px 10px rgba(0,0,0,.2),
+10px 20px 20px rgba(0,0,0,.1);
+}
+.text2 {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+
+
+.text3:hover {
+text-shadow: 0px 0 25px #fff;
+}
+.text3 {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
